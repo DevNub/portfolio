@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Form - Display</title>
+
+<script>
+function displayName(textField)
+{
+	document.getElementById('disp').innerHTML = document.getElementById(textField).value
+	alert(document.getElementById(textField).value)
+}
+
+function reverse(form) 
+{
+	var text = "";
+	var str = form.rev.value;
+	for (i = 0; i <= str.length; i++)
+	text = str.substring(i, i+1) + text;
+	form.rev.value = text;
+}
+</script>
+
+</head>
+
+<body>
+<center>
+<table border="3" width="600" height="400" bordercolor="#000000F8" background="blue.jpg">
+<center>
+<td>
+<form>
+<center>
+Enter your full name : <input type="text" Name="rev" Size="20" Maxlength="20" id="myName">
+
+
+<input type="button" value="Show Name" onclick="displayName('myName')">
+<input type="button" value="Reverse" onClick="reverse(this.form)">
+<a href="http://localhost/form/html_form.html">
+<input type="button" value="Next">
+</a>
+</center>
+</form>
+<center>
+<br/>
+<div id="disp">Click Show Name</div>
+</center>
+</td>
+</center>
+</table>
+</center>
+</body>
+</html>

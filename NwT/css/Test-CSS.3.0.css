@@ -1,0 +1,225 @@
+
+		/*-------------------------------
+			Header and NavBar Style Sheet
+			version: 3.0 - Beta
+			last modified: 1/10/12 by Dan
+			author: Dan
+			purpose: New World Tech
+		-------------------------------*/
+		
+<style type="text/css">
+   			 html { 
+				   background: url(images/background.png) no-repeat center center fixed; 
+				   -webkit-background-size: cover;
+				   -moz-background-size: cover;
+				   -o-background-size: cover;
+				   background-size: cover;
+				  }	
+			
+			#map {
+    			  margin:0 0;
+    			  padding:0;
+				  height:144px;
+				  width:87% !important;
+				  min-width:960px;
+    			  background:url(../images/indexbar2.png) no-repeat center top fixed;
+				  min-width:fit;
+				  -webkit-background-size: fit;
+				   -moz-background-size: fit;
+				   -o-background-size: fit;
+				   background-size: fit;
+    			  font-family:arial, helvetica, sans-serif;
+    			  font-size:8pt;
+				 }
+				 
+			#map li {
+    				 margin:0 0;
+    				 padding:0;
+    			  	 list-style:none;
+					}
+			
+			#map li a {
+    				   position:absolute;
+    				   display:block;
+					   margin:0 0;
+    				   padding:0;
+    /*
+       Specifying a background image
+       (a 1px by 1px transparent gif)
+       fixes a bug in older versions of
+       IE that causeses the block to not
+       render at its full dimensions.
+    */
+    				  background:url(images/spacer.btn.png);
+					 }
+			
+			#map li a span { display:none; }	
+			
+			#map li a:hover span {
+    							  position:fixed;
+								  z-index: 4;		      
+    							  display:block;
+  								  width:530px;
+  								  left:375px;
+  								  top:150px;
+  								  padding:5px;
+  								  border:1px solid #000;
+  								  background:#fff;
+ 								  text-decoration:none;
+  								  color:#000;
+  								  filter:alpha(opacity=80);
+  								  opacity:0.8;
+								 } 
+			
+			#map a.abt {
+	top:56px;
+	left:350px;
+	width:86px;
+	height:18px;
+						 }
+       
+			#map a.prj {
+	top:52px;
+	left:453px;
+	width:112px;
+	height:23px;
+						  }
+       
+			#map a.nwt {
+	top:42px;
+	left:594px;
+	width:102px;
+	height:50px;
+						 }
+							   
+			#map a.pics {
+	top:54px;
+	left:709px;
+	width:99px;
+	height:19px;
+					   }
+							   
+			#map a.inf {
+	top:48px;
+	left:822px;
+	width:97px;
+	height:25px;
+						} 
+			
+			#frame {
+					width:590px;
+					height:77% !important;
+					min-height:100px;
+					border:none;
+					margin:0 auto;
+					padding:0;
+					background-color:#393;
+					}
+					
+	  #idframe {
+				margin:0 0;
+    			padding:0;
+				height:144px;
+				width:87% !important;
+				min-width:960px;
+				background:url(images/spacer.btn.png);
+				  -webkit-background-size: fit;
+				   -moz-background-size: fit;
+				   -o-background-size: fit;
+				   background-size: fit;
+    			  font-family:arial, helvetica, sans-serif;
+    			  font-size:8pt;
+				 }
+			
+			#box {
+				z-index:-1;
+				top:110px;
+				left:10px;
+				margin:0 0;
+    			padding:0;
+				width:87% !important;
+				height:77% !important;
+				min-width:568px;
+				min-height:100px;
+				border:3px outset #D1E5D4;
+				margin:0px;
+				padding-top:0px;
+				background:#546E58;
+ 				text-decoration:none;
+  				color:#000;
+  				filter:alpha(opacity=80);
+  				opacity:0.8;
+				background:url(images/spacer.btn.png);
+				  -webkit-background-size: fit;
+				   -moz-background-size: fit;
+				   -o-background-size: fit;
+				   background-size: fit;
+    			  font-family:arial, helvetica, sans-serif;
+    			  font-size:8pt;
+				 }
+				 
+				 /* own css & into frame on html
+				 #image-slider {
+					 min-width: 600px;
+					 margin:0 auto;
+    				 padding:0;
+					 width:87% !important;
+					 height: 338px;
+					 padding: 10px;
+					 position:inherit;
+					 top:146px;
+					 left:87% !important;
+					 overflow: visible;
+					 background: url("../images/slider-frame.png") no-repeat;
+				
+				 }
+				 
+				 /*#image-slider .prev {
+					 position: fixed;
+					 z-index: 3;
+					 top: 286px;
+					 left:320px;
+				 }
+				 
+				 #image-slider .next {
+					 position: fixed;
+					 z-index: 3;
+					 right: 213px;
+					 top:286px;
+				 }
+				 
+				 #image-slider ul {
+					 position: fixed;
+					 top:176px;
+					 left:476px;
+					 width: 380px;
+					 height: 197px;
+					 margin: 0px auto;
+					 overflow: hidden;
+					 z-index: 2;
+				 }
+					 */
+				 
+				 #sidebarl {
+				position:fixed;
+				z-index:-1;
+				top:105px;
+				left:30px;
+				width:cover;
+				-webkit-background-size: fit;
+				   -moz-background-size: fit;
+				   -o-background-size: fit;
+				   background-size: fit;
+				min-width:251px;
+				min-height:533px;
+				margin:0px;
+				padding-top:20px;
+				background:#546E58;
+ 				text-decoration:none;
+  				color:#000;
+  				filter:alpha(opacity=60);
+  				opacity:0.6;
+				 }
+			</style>
+
+ 

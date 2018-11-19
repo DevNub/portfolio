@@ -1,0 +1,10 @@
+@charset "utf-8";
+/* CSS Document */
+
+html { 
+	background: url(home-pg.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}

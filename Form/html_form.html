@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Full Name</title>
+
+<script>
+function displayName(textField)
+{
+	document.getElementById('disp').innerHTML = document.getElementById(textField).value
+	alert(document.getElementById(textField).value)
+}
+</script>
+
+	<style><!-- fit to wiindow bg css -->
+		* { margin: 0; padding: 0; }
+		html{
+				background: url(blue.jpg) no-repeat center center fixed;
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+			}
+	</style>
+
+</head>
+
+<body>
+<center>
+<!--
+	imo
+	<form action="displayPage.php" Name="name"></form>
+	tells the form what to do, ie it redirects to "displayPage.php" when the form is completed (when the user clicks submit button)
+
+	$_REQUEST['myName'];
+	<?php?> or <? ?> is the tag for php coding and $_REQUEST is a predefined function to call back the name from this html into the php page
+-->
+
+
+
+
+
+<form action="displayPage.php" method="post">
+Enter your full name : <input type="text" Name="name2" Size="20" Maxlength="20" id="myName">
+
+
+<input type="submit" value="Send Name"> 
+<input type="reset" value="Cancel">
+</form>
+
+<div id="disp"></div>
+</center> 
+</body>
+</html>

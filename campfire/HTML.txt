@@ -1,0 +1,69 @@
+Working through html, in terms of coding and uploading for this site, is challenging. 
+Although challenging, it is interesting to know that I can do something like this with a little perseverance.
+A few of the challenges I faced recently with uploading was two of my new webpages only loading up text. 
+Well, yeah text, not html code. Thing is, I already coded my styling for the website but for the life of me,
+I just could not understand why things damned thing kept coming up with a white background!! I gave up after two days
+of endless sole trials for errors within the hour or two. 
+
+Stressing? Yes it was, hella stressing. After cooling off for 4 days, I was back, ready to look at the problem from a new
+angle. BAM!, what do you know, figured it out. The problem was my style sheet. I had linked it correctly but it was still
+missing. The new webpages I introduced were in a new directory. Meanwhile, the style sheet I linked these webpages to,
+had remained in my root directory. Following the first solution that came to mind, I immediately copied all files relevant
+to my style sheet AND lets not forget, my style sheet else I would still be in deep -. Thinking about it now, I realize that
+It would be better if I had just linked to the root directory instead of stacking up on files and going through problems if
+or when I add something new to my style sheets.
+
+Tl;dr Style Sheet, wrong place.
+22/08/2014;9:00am 
+
+----
+
+Returned once more, after giving my website a break since ... well, things were not working out as planned. I will explain why,
+I had left coding my website once more but not too long this time, anyway the problem which occured this time, was my css once
+again, causing me back pains. I noticed that some of my containers remained out of place after multiple tries at editing to
+an acceptable solution; to no avail - at the time. With the help of google's online element inspection, I was able to see a 
+checklist of code in my style sheet. A checklist, yes, so I was able to uncheck some items, just meddling with it at first
+and a few seconds later, realizing that this in it self was helpful. I knew that the problem was within the style sheet from
+day one, but not the where. I had created a whole new style sheet just so that this page would have a separate styling sheet.
+That did not work, still puzzled, I put it down until another time. This time, I successfully fixed the problem by removing some
+unnecessary coding, and tweaking a few values.
+
+So far, I have learnt that your css can be very dangerous; especially if you don't know what you are doing.
+Although it's good to try without knowing, but never give up.
+
+03/09/2014;10:43am
+
+----
+Hey, back again after about three months. I have more free time on my hands now but procrastination has become a friend. Although,
+during those 3 months, I managed to join an online forum called DevShed (www.devshed.com). It is a really interesting site forum.
+It is a programming forum with a broad spread. When I say that, I mean it covers a wide variety of things, from programming
+languages to hardware usage. Game programing is something that also interests me although I was not sure where to start. Forums in
+general are a good place to start. 
+
+Tips to stay focused
+"You should think of, or find a good project that will keep your interest for a while. Something that will challenge you with 
+concepts and features JUST beyond your reach." 
+
+"The start learning that. Don't limit yourself...stop doing watching porn and gaming. Seriously, it is that easy. No one ever 
+expanded their learning wasting their time like that. If you're bored, find a good project that excites you and start working on it."
+
+"The more interesting that project is to you personally the more work you'll be prepared to put into it, so make it something that 
+you really want to see or do yourself."
+
+Back to the main topic, whatever it is - tl;dr
+I am going to start more programming as I learn through posts in this forum.
+
+05/11/2014;3:14pm
+
+---
+Happy New Year
+
+There are a few things you find out later on from other sources in regards to html. One example would be the fact that if you do not
+include ' alt="" ' in your <img> tag then you would be technically working with invalid html. Another example being the <span> tag
+versus the <div> tag. These two tags are similar in nature however, the difference is that using the div tag will prevent any other html
+from being beside whatever is inside of the <div> tag. Your Html would only be allowed to go above or below the content inside of the
+<div> tag. Also, the <span> tag does not leave a line below it and can be used to add features such as color to selected parts of your html.
+Of course one of the first things you will realize if not before, then now, is that keeping your code neat makes it easier to read, to find
+errors, pick up where you left off and give you a nice feel of presentation in a sense.
+
+16/01/2015;10:48am

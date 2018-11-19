@@ -1,0 +1,9 @@
+"PHP" is a back end or server side programming language and one of the more popular ones. It is recommended that upcoming website
+developers learn a back end scripting language after understanding the ins and outs of the HTML language. Currently I am looking about
+gaining a better understanding of the language; PHP coding that is. This log will be used for the sake of noting the learning experience. 
+
+----
+
+
+
+16/01/2015;10:55am

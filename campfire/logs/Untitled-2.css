@@ -1,0 +1,30 @@
+
+#slidepack {
+					 min-width: 100px;
+					 max-width: 1040px;
+					 max-height: 535px;
+					 width:40px;
+					 z-index:1;
+					 margin:0px;
+    				 padding:0;
+					 height: 338px;
+					 position:static;
+					 top:130px;
+					 left:145px;
+					 overflow:visible;
+					 /*margin-left: 80px;
+					 margin-top: 50px;*/
+					 background:url(slider-frame.png) no-repeat;
+
+				
+				 }
+				 
+#spitem {
+					 position:relative;
+					 top:29px;
+					 left:90px;
+					 width: 28px;
+					 height: 88px;
+					 margin:0px;
+					 z-index: 2;
+				 }

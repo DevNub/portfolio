@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>slideshow test</title>
+</head>
+<style type="text/css">
+.slidepack{
+	width:1040px;
+	height:535px;
+	margin:auto;
+	position:relative;
+	top:0;
+	left:0;
+}
+
+.spWrap{
+	width:1440px;
+	height:535px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.spItem{
+	float:left;
+	margin-right:20px;
+	list-style:none;
+}
+
+.controls{
+	margin-top:220px;
+	z-index:3;
+}
+
+.previous{
+	cursor: pointer; 
+	float: left;
+	z-index:3;
+}
+
+.next{
+	cursor:pointer;
+	margin-left:0px;
+	float:right;
+	z-index:3;
+}
+	
+.clearfix:before, .clearfix:after { content: " "; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1;}
+</style>
+
+<script type="text/javascript">
+//This will make sure that everything is run only when the page is completely loaded
+$(window).load(function(){
+	$(".slidepack_link").fancybox({
+		'titleShow'		: false,
+		'transitionIn'	: 'elastic',
+		'transitionOut'	: 'elastic'
+	 });
+//Set General Variables
+
+var totalWidth = 0;
+
+//Total width is calculated by looping through each gallery item and adding up each width and storing that in 'totalWidth'
+$(".spItem").each(function(){
+	totalWidth = totalWidth + $(this).outerWidth(true);
+});
+
+//The maxScrollPosition is the furthest point the items should ever be able to scroll to. We always want the viewport to be full of images.
+var maxScrollPosition = totalWidth - $(".spWrap").outerWidth();
+
+// This is the core function that animates to the target item  
+function tosSPitem($targetItem){
+	// Make sure that the target item exists, otherwise do nothing
+	if($targetItem.length){
+		
+		// The newposition isjust to the left of the targetItem
+		var newPosition = $targetItem.position().left;
+		
+		//If the new position isn't greater than the maximum width
+		if(newPosition <= maxScrollPosition){
+			
+			//Add active class to the target item
+			$targetItem.addClass("spItem--active");
+			
+			//Remove the active class from all other items
+			$targetItem.siblings().removeClass("spItem--active");
+			
+			//Animate .slidepack element to the correct left position
+			$(".slidepack").animate({
+				left : - newPosition
+			});
+		} else {
+			// Animate .gallery element to the correct left position
+			$(".slidepack").animate({
+				left : - maxScrollPosition
+			});
+		};
+	};
+};
+
+// Basic HTML manipulation
+
+//Set the gallery width to the totalWidth. This will allow all items to be on one line!!! :D
+$(".slidepack").width(totalWidth);
+
+//Add active class to the first slidepack item
+$(".spItem:first").addClass("spItem--active");
+
+//When the prev button is clicked
+$(".previous").click(function(){
+	//Set the target item to the item before the active item
+	var $targetItem = $(".spItem--active").prev();
+	toSPitem($targetItem);
+});
+
+//When the next button is clicked
+$(".next").click(function(){
+	//set the target item to the item after the active item
+	var $targetItem = $(".spitem--active").next();
+	toSPitem($targetItem);
+});
+});
+
+</script>
+
+<body>
+
+<div class="spWrap">
+
+  <div class="spClearfix">
+    <div class="slidepack">
+      <img src="slidepack1.png" class="spItem" width="1040" height="535" alt="" />
+    </div>
+     <div class="slidepack">
+      <img src="slidepack2.png" class="spItem" width="1040" height="535" alt="" />
+    </div>
+    <div class="slidepack">
+      <img src="slidepack3.png" class="spItem" width="1040" height="535" alt="" />
+    </div>
+  </div>
+
+  <div class="controls">
+    <div href="#" class="previous">
+      <img src="previous.png" width="120" height="50" alt="" />
+    </div>
+    <div href="#" class="next">
+      <img src="next.png" width="100" height="50" alt="" />
+    </div>
+  </div>
+  
+</div>
+
+</body>
+</html>

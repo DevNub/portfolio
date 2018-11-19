@@ -1,0 +1,9 @@
+Training with the experts
+
+Microsoft Virtual Academy: http://www.microsoftvirtualacademy.com/training-courses/c-fundamentals-development-for-absolute-beginners
+
+The Beginners Problem: http://www.codeabbey.com/index/task_list
+
+Help Team Forum: http://forums.devshed.com/
+
+PHP Tutorial: http://devzone.zend.com/6/php-101-php-for-the-absolute-beginner/

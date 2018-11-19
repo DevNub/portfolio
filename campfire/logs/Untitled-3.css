@@ -1,0 +1,259 @@
+html, div, h2, h3, p, img,
+b, ol, ul, li
+ {
+    margin: 0;
+	cursor:crosshair;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    background: transparent;
+}
+
+div {
+	 margin: -10px;
+}
+
+.headbutt {
+	min-width:751px;
+	max-height:94px;
+}
+
+body {
+    font-size: 13px;
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
+    /*background: #dfe4e6 url("bg.gif") repeat left top;*/
+	background: url(wood-texture-640x925.jpg) repeat left top;
+    color:#733E1E;
+	/*color: #6a6e70;*/
+}
+
+h3 {
+	border: #963 groove;
+	text-decoration:blink;
+	max-width: 1245px;
+	min-width: 759px;
+	margin: auto;
+	color:#FC9;
+	position:relative;
+	background:url(bg.png) repeat;
+	background-attachment:scroll
+    vertical-align: top;
+}
+
+
+header {
+    font-size:70px;
+	/*width: 942px;*/
+	padding: -10px;
+    /*height: 90px;*/
+    margin: -10px;
+	border-image:url(header-bg.gif) repeat; 
+    /*background: url("header-bg.gif") no-repeat center bottom;*/
+	background:url(Header.jpg) no-repeat center scroll ;
+	/*position:static;*/
+}
+
+.limg{
+	cursor:auto;
+	alignment-adjust:auto;
+}
+
+h2 {
+    background: #b6bec2 url("title-stripes.gif") repeat left top;
+	opacity: 8;
+	/*height: 600px;*/
+	max-width: 1225px;
+	min-width: 751px;
+	min-height:583px;
+	max-height:583px;
+	margin: auto;
+	border: solid 1px #c8ced1;
+    position: relative;
+    line-height: 26px;
+    padding: 10px 10px;
+    /*font-size: 24px;
+    text-align: center;
+    /*-moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    behavior: url(../../%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0%C2%A0/htdocs/html/DesignLabWeb/css/css/PIE.php);*/
+}
+
+.sidebar1 {
+	float: left;
+	width: 20%;
+	max-width:130px;
+	position: relative;
+	z-index:2;
+	/*width: 130px;*/
+	background:url(images/Spacer.btn.png);
+	padding-bottom: 10px;
+	top:6px;
+}
+
+.sidebar2 {
+	position:relative;
+	min-width:610px;
+	max-width:1498px;
+	min-height:533px;
+	max-height:533px;
+	width:85%;
+	height: 450px;
+	background:url(bg.png);
+	left:130px;
+	top:-3px;
+}
+
+.sidebar3 {
+	width: 80%;
+	max-width: 700px;
+	height: 490px;
+	margin: auto;
+	/*float:left;*/
+	float:inherit;
+	background:#963;
+	padding: 0px;
+	/*padding-bottom: 10px;
+	margin-right: 100px;
+	padding-right:0px;
+	margin-left: 15px;
+	margin-right:50px;
+	margin-top: -900px;*/
+	/*position:relative;*/
+	position: relative;
+	/*background:url(bg.png);*/
+	background:transparent;
+	left: 130px;
+	top: -500px;
+
+}
+.pity{
+	color:#FC9;
+	margin-top:-15px;
+	margin-right:70px;
+	margin-left:-60px;
+	max-height:500px;
+	overflow-y:scroll;
+	left: -70px;
+	background: transparent;
+}
+
+.pity2{
+	color:#FC9;
+	font-size:15px;
+	text-align:center;
+	word-wrap:break-word;
+	height:500px;
+	width:100%;;
+	margin-top:0px;
+	margin-right:70px;
+	margin-left:-60px;
+	max-height:400px;
+	overflow-y:scroll;
+	overflow-x:hidden;
+	left: -70px;
+	position:relative;
+	top:0px;
+	background: transparent;
+}
+
+
+/* ~~ The navigation list styles (can be removed if you choose to use a premade flyout menu like Spry) ~~ */
+ul.nav {
+	list-style: none; /* this removes the list marker */
+	border-top: 1px solid #666; /* this creates the top border for the links - all others are placed using a bottom border on the LI */
+	margin-bottom: 15px; /* this creates the space between the navigation on the content below */
+}
+ul.nav li {
+	cursor: auto;
+	border-bottom: 1px solid #666; /* this creates the button separation */
+}
+ul.nav a, ul.nav a:visited { /* grouping these selectors makes sure that your links retain their button look even after being visited */
+	cursor: auto;
+	padding: 5px 5px 5px 15px;
+	display: block; /* this gives the link block properties causing it to fill the whole LI containing it. This causes the entire area to react to a mouse click. */
+	text-decoration: none;
+	background:url(bg.gif);
+	color:#733E1E;
+	/*color: #000;*/
+}
+ul.nav a:hover, ul.nav a:active, ul.nav a:focus { /* this changes the background and text color for both mouse and keyboard navigators */
+	cursor: auto;
+	background:url(bg.png);
+	color:#FC9;
+	/*color:#999;*/
+}
+
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	cursor: auto;
+	color:#414958;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	cursor: auto;
+	color: #4E5869;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+	cursor:auto;
+}
+
+
+
+#image-slider {
+					 min-width: 600px;
+					 width:80%;
+					 margin:0px;
+    				 padding:0;
+					 height: 338px;
+					 position:static;
+					 top:130px;
+					 left:145px;
+					 overflow:visible;
+					 /*margin-left: 80px;
+					 margin-top: 50px;*/
+					 background:url(slider-frame.png) no-repeat;
+					 z-index::2;
+
+				
+				 }
+				 
+#image-slider ul {
+					 position:relative;
+					 top:29px;
+					 left:90px;
+					 width: 428px;
+					 height: 188px;
+					 margin:0px;
+					 z-index: 2;
+				 }
+
+#slidepack {
+	/*background:transparent;
+	height: 535px;
+	width:400px;
+	overflow: hidden;
+	margin-top:-370px;
+	margin-left:-100px;
+	z-index:0;
+	float:left;		*/
+	position:relative;
+	min-width:610px;
+	max-width:1498px;
+	min-height:500px;
+	max-height:500px;
+	width:85%;
+	background:transparent;
+	left:-80px;
+	top: -388px;
+	overflow:hidden;
+	margin-left:0px;
+}
+
+#spItem {
+
+	
+}
